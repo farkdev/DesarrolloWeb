@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+*{
+    font-family: 'Maven Pro', sans-serif, 'Arvo', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: bord;
+}
+ 
+html{
+    font-size: 62.5%;
+}
+
+h1{
+    color: rgb(26, 29, 31);
+    font-size: 4rem;
+}
+h2{
+    color: rgb(26, 29, 31);
+    font-size: 4rem;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+/* Mobile first   */
+.contenedor{
+	display: grid;
+    grid-template-columns: auto;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-areas: 
+	"nav" 
+	"header" 
+	"productos"  
+	"aside" 
+	"footer";
+}
+/* areas layout*/
+#mainNav{
+	grid-area: nav; 
+}
+
+#header{
+	grid-area: header;
+    display: flex;
+    justify-content: center;
+}
+
+#productos{
+	grid-area: productos;
+    
+}
+
+#aside{
+    grid-area: aside;
+	background-color: rgba(109, 126, 223, 0.7);
+	padding: 0px;
+    margin: 0px;
+}
+#footer{
+	grid-area: footer;
+}
+	
+/* --- ICONS EN COLUMNA EN MOBILE --- */
+
+
+
+
+
+/* nav bar*/
+.navBar{
+        background-color: rgba(109, 126, 223, 0.7);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+    .navBar img{
+        width: 70px;
+        height: 60px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .navBar ul{
+        display: flex;
+    
+    }
+        .navBar ul li a{
+            font-size: 1.8rem;
+			text-decoration: none;
+			color: #ffffff;
+            font-family: 'Maven Pro', sans-serif;
+            margin-top: 25px;
+            margin-right: 20px;
+           
+        }
+
+        .navBar ol li a:hover{
+            background-color: rgba(109, 126, 223, 0.7);
+			font-weight: 600;
+		}
+
+
+/*termina mobile first*/
+.img-center{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#productos .galeria{
+    margin: 20px 0;  
+    display: flex;
+    justify-content: center; 
+}
+    #productos .galeria figure{
+    margin: 10px 0;
+    }
+        #productos .galeria figure img{
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+
+
+        #productos .galeria figure figcaption{
+            font-size: 1.5rem;
+            padding: 10px 0;
+            background-color: white;
+            text-align: center;
+        }
+
+        #productos .galeria p.price{
+            color: #676565;
+            padding-bottom: 10px;
+            background-color: white;
+            text-align: center;
+        }
+
+
+main section p{
+    color: rgb(36, 58, 158);
+    background-color: rgb(206, 210, 230, 0.9);
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: 200;
+}
+
+main section h3{
+    color: rgb(48, 52, 68);
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 2rem;
+    line-height: 4.2rem;
+    font-weight: 100;
+}
+
+main p{
+    color: black;
+    background-color: rgb(109, 126, 223, 0.7);
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 100;
+}
+
+main section {
+    color: rgb(0, 0, 0);
+    background-color: rgb(206, 210, 230, 0.9);
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+    padding: 10px;
+    border: solid black 2px;
+    margin: auto;
+}
+
+.bg-light{
+    background-color: rgb(32, 31, 21);
+
+}
+
+.textCenter{
+    text-align: center;
+    color: black;
+    background-color: rgba(109, 126, 223, 0.7);
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 4rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+    padding: 10px;
+    margin: 0px;
+    border: solid 2px black;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    justify-content: space-between;
+
+}
+
+
+.img{
+    display: flex;
+    width: 150px;
+    height: 200px;
+    border: 1px solid black;
+    /*align-items: center;*/
+    justify-content: center;
+}
+    .img-sm{
+        width: 10px;
+        height: 150px;
+        display: grid;
+        justify-content: center;
+
+    }
+
+
+.productos{
+    margin: 10px auto;
+}
+.inicio{
+    display: flex;
+    font-size: 4rem;
+    font-family: 'Arvo', serif;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+}
+.secondNav{
+	background-color: white;
+	color:#676565 ;
+	padding: 10px 30px;
+	font-size: 1.3rem;
+	line-height: 1.6em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer{ 
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto; 
+    grid-template-areas: 
+    "contacto mapa redes"
+    "legal legal legal";
+   
+    
+    font-size: 1.5rem;
+    font-family: 'Arvo', serif;
+    margin: 5px 15px;
+    border: solid 2px black;
+   
+}
+    .contacto{
+        display: flex;
+    grid-area: contacto;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-content: center;
+    }
+    .mapa{
+        display: flex;
+        grid-area: mapa;
+        font-size: 1.5rem;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        justify-content: center;
+    }
+    .redes{
+        display: flex;
+        grid-area: redes;
+        
+        grid-column: 3/4;
+        grid-row: 1/2;
+        justify-content: center;
+    }
+    .legal{
+        display: flex;
+        grid-area: legal;
+        margin: 5px;
+        grid-column: 1/4;
+        grid-row: 2/4;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    margin: 15px 10px;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.pie{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+
+.icon{
+    width: 55px;
+    height: 55px;
+    margin: 10px;
+    flex-direction: row;
+}
+
+
+.border{
+    border: 1px solid black;
+}
+#pProductos{
+    font-size: 1.5rem;
+    font-family: 'Maven Pro', sans-serif;
+    color: black ;
+}
+#aside{
+    display: flex;
+	background-color: rgba(109, 126, 223, 0.7);
+	padding: 0px;
+    margin: 0px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(109, 126, 223, 0.7);
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 2.2rem;
+    font-weight: 200;
+    border: solid 2px black;
+    justify-content: center;
+}
+
+/* ======================= media queries INDEX ======================= */
+
+/* min-width: 768px definimos 2cols (30VW - 70VW) y 5 rows auto */
+@media (min-width: 768px){
+	.contenedor{
+		grid-template-columns: 30vw 70vw;
+		grid-template-areas: 
+		"nav nav"
+		"header header" 
+		"productos aside" 
+		"footer footer";
+	}
+
+ 	
+ /* los productos van apilados */
+	#productos .galeria{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	/* reducimos el width de las figure a 90%*/
+	#productos .galeria figure{
+		width: 90%;
+	}
+
+	/*aside queda abajo de los productos dirección horizontal*/
+	#aside{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
+
+/* min-width: 1024px defino 3 cols con medidas 20vw 70vw 10vw*/
+@media (min-width: 1024px){
+	
+	.contenedor{
+		display: grid;
+		grid-template-columns: 20vw 70vw 10vw;
+        grid-template-rows: auto;
+		grid-template-areas: 
+		"nav nav nav" 
+		"header header header" 
+		"aside productos productos" 
+		"footer footer footer";
+	}
+    .logo ul{
+        display: flex; 
+        flex-direction: row;
+    }
+	/* cambio la dirección del aside a columna ahora flota a la derecha*/
+	#aside{
+        display: flex;
+		flex-direction: column;
+		align-content: flex-start;
+        justify-content: flex-start;
+	}
+
+	/* llevo al 80% el width de los productos*/
+	#productos .galeria figure{
+		width: 80%;
+	}
+
+	/* cambio la dirección de la botonera a row*/
+	.navBar{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	/*sacamos el margin bottom 0 al logo*/
+		.botonera img{
+			margin-bottom: 0;
+		}
+}
+
+/* min-width: 1200px cambio la dirección de la gale de productos a row*/
+@media (min-width: 1200px){
+	
+	#productos .galeria{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	/*achico el width de los productos al 30%*/
+		#productos .galeria figure{
+			width: 30%;
+		}
+
+}
