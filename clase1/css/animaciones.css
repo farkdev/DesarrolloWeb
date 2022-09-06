@@ -25,9 +25,16 @@
 }
 
 @keyframes headerAnimation{
-    0%{background-image: url(../img/);}
-    25%{background-image: url();}
-    50%{background-image: url();}
-    75%{background-image: url();}
-    100%{background-image: url();}
+    0%{background-image: url(../img/electrodomesticos.webp);}
+    25%{background-image: url(../img/congelados.jpg);}
+    50%{background-image: url(../img/delivery.webp);}
+    75%{background-image: url(../img/limpieza.jpg);}
+    100%{background-image: url(../img/verdulería.jpeg);}
+}
+
+.header{
+    animation-name: headerAnimation;
+    background-size: cover;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
