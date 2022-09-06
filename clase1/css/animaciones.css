@@ -23,3 +23,11 @@
     background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 
 }
+
+@keyframes headerAnimation{
+    0%{background-image: url(../img/);}
+    25%{background-image: url();}
+    50%{background-image: url();}
+    75%{background-image: url();}
+    100%{background-image: url();}
+}
