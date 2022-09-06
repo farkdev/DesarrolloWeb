@@ -1,5 +1,25 @@
 .bg-fl{
-background: rgb(5,75,108);
-background: linear-gradient(90deg, rgba(5,75,108,1) 0%, rgba(0,182,244,1) 35%);
+    background: #a1c4fd;
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);;
+
+}
+
+
+.button{
+    width: 100px;
+    height: 25px;
+}
+
+.button:hover{
+    
+    cursor: pointer;
+    transition: all 0.5s;
+    color: blue;
+}
+
+
+.nav-gr{
+    background: #a1c4fd;
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 
 }
