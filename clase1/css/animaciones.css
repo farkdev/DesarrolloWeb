@@ -1,3 +1,4 @@
+animaciones
 .bg-fl{
     background: #a1c4fd;
     background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);;
@@ -37,4 +38,8 @@ header{
     background-size: cover;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+=======
+.bg-fil{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,117,157,1) 14%, rgba(0,212,255,1) 48%)
+
 }
