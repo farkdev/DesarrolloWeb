@@ -32,7 +32,7 @@
     100%{background-image: url(../img/verdulería.jpeg);}
 }
 
-.header{
+header{
     animation-name: headerAnimation;
     background-size: cover;
     animation-duration: 10s;
