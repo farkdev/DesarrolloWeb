@@ -1,3 +1,45 @@
+animaciones
+.bg-fl{
+    background: #a1c4fd;
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);;
+
+}
+
+
+.button{
+    width: 100px;
+    height: 25px;
+}
+
+.button:hover{
+    
+    cursor: pointer;
+    transition: all 0.5s;
+    color: blue;
+}
+
+
+.nav-gr{
+    background: #a1c4fd;
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+}
+
+@keyframes headerAnimation{
+    0%{background-image: url(../img/electrodomesticos.webp);}
+    25%{background-image: url(../img/congelados.jpg);}
+    50%{background-image: url(../img/delivery.webp);}
+    75%{background-image: url(../img/limpieza.jpg);}
+    100%{background-image: url(../img/verdulería.jpeg);}
+}
+
+header{
+    animation-name: headerAnimation;
+    background-size: cover;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+=======
 .bg-fil{
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,117,157,1) 14%, rgba(0,212,255,1) 48%)
+
 }
