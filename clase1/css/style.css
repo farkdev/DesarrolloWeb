@@ -20,6 +20,16 @@ h2{
     font-size: 4rem;
     font-family: 'Maven Pro', sans-serif;
 }
+.p{
+    display: flex;
+    justify-content: center;
+    font-size: 2.2rem;
+}
+.fontS{
+    font-size: 2.2rem;
+
+}
+
 
 /* Mobile first   */
 .contenedor{
@@ -67,7 +77,7 @@ h2{
 
 /* nav bar*/
 .navBar{
-        background-color: rgba(109, 126, 223, 0.7);
+        
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -97,11 +107,7 @@ h2{
            
         }
 
-        .navBar ol li a:hover{
-            background-color: rgba(109, 126, 223, 0.7);
-			font-weight: 600;
-		}
-
+        
 
 /*termina mobile first*/
 .img-center{
@@ -194,10 +200,11 @@ main section {
     /*background-color: rgba(109, 126, 223, 0.7);*/
     font-family: 'Maven Pro', sans-serif;
     font-size: 4rem;
-    line-height: 2.2rem;
+    line-height: 3.2rem;
     font-weight: 400;
     padding: 10px;
     margin: 0px;
+
     
 }
 
@@ -216,6 +223,13 @@ nav ul li a{
 
 .text-left{
     text-align: left;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
 }
 
 .text-right{
@@ -284,10 +298,10 @@ nav ul li a{
 }
     .contacto{
         display: flex;
-    grid-area: contacto;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    justify-content: center;
+        grid-area: contacto;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-content: center;
     }
     .mapa{
         display: flex;
