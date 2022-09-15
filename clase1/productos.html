@@ -4,42 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title> Supermercado 24 hs</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animaciones.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-    <div class="contenedor">
-        <nav id="mainNav" class="navBar nav-gr" >
-        
-            <a href="index.html">
+    <nav class="navbar navbar-expand-lg navbar-light bg-fl">
+        <div class="container-fluid">
+            <a class="navbar-brand navBar" href="index.html">
                 <img src="img/newlogo.svg" alt="LOGO" class="">
             </a>
-        <ul class="">
-            <li> 
-                <a href="productos.html" class="">Productos</a>
-            </li>
-
-            <li>
-                <a href="categorias.html" class="">Categorías</a>
-            </li>
-            <li>
-                <a href="ofertas.html" class="">Ofertas</a>
-            </li>
-            <li>
-                <a href="registro.html" class="">Regístrate</a>
-            </li>
-            <li>
-                <a href="nosotros.html" class="">Nosotros</a>
-            </li>
-        </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorías
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Alimentos</a></li>
+                            <li><a class="dropdown-item" href="#">Electrodomésticos</a></li>
+                            <li><a class="dropdown-item" href="#">Congelados</a></li>
+                            <li><a class="dropdown-item" href="#">Limpieza</a></li>
+                            <li><a class="dropdown-item" href="#">Jardín y Hogar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ofertas.html">Ofertas</a>
+                    </li>
+              
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro.html">Registro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+          </div>
+        </div>
     </nav>
-        </div> 
-
-        <header id="header" class="">
-            
-        </header>
     <main id="productos">
         <h2 class="textCenter">Productos</h2>
             
@@ -80,7 +94,7 @@
             </figure>
     
             <figure>
-                <img src="img/cocina2.png" alt="" class="img-sm">
+                <img src="img/cocina2.jpg" alt="" class="img-sm">
                 <figcaption>Cocina eléctrica 3 hornallas negra 220V - 240V puerta con visor 74L</figcaption>
                 <p class="price">$63.499</p>
             </figure>
@@ -137,8 +151,7 @@
  
          </div>        
      </footer>
-
-
-
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
