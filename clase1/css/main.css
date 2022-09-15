@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
 body {
   background-color: radial-gradient(circle farthest-corner at 10% 20%, rgb(97, 186, 255) 0%, rgb(166, 239, 253) 90.1%);
+}
+
+h1, h2 {
+  font-size: 3.5rem;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,16 @@
+//fonts de Google
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+$mainFont: 'Maven Pro', sans-serif;
+$secondFont: 'Arvo', serif;
+
+
+//font size
+$fontLg: 3.5rem;
+$fontMd: 2.2rem;
+$fontSm: 1.5rem;
+
+h1, h2{
+    font-size: $fontLg;
+}
