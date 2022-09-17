@@ -194,19 +194,7 @@ main section {
 
 }
 
-.textCenter{
-    text-align: center;
-    color: black;
-    /*background-color: rgba(109, 126, 223, 0.7);*/
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 3.5rem;
-    line-height: 3.2rem;
-    font-weight: 400;
-    padding: 10px;
-    margin: 0px;
 
-    
-}
 
 nav ul{
     list-style: none;
@@ -221,25 +209,6 @@ nav ul li a{
     padding: 0;
 }
 
-.text-left{
-    text-align: left;
-}
-
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 25px;
-}
-
-.text-right{
-    text-align: right;
-    display: flex;
-    flex-direction: row;
-    margin-right: 30px;
-    justify-content: space-between;
-
-}
 
 
 .img{
