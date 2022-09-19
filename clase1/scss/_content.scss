@@ -32,3 +32,21 @@
     justify-content: space-between;
 
 }
+
+.img{
+    display: flex;
+    width: 10px;
+    height: 20px;
+    border: 1px solid black;
+    /*align-items: center;*/
+    justify-content: center;
+}
+    .img-sm{
+        padding: 15px;
+        margin: 100px;
+        width: 5px;
+        height: 70px;
+        display: grid;
+        justify-content: center;
+    }
+
