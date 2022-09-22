@@ -43,10 +43,16 @@
 }
 .img-sm{
     padding: 15px;
-    margin: 10px;
-    width: 100px;
-    height: 350px;
-    /*display: grid;
-    justify-content: center;*/
+    margin: 20px;
+    width: 200px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
 }
 
+.cardImages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: $fontMd;
+}

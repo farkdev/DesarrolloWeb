@@ -75,8 +75,8 @@ body {
 
 .img {
   display: flex;
-  width: 10px;
-  height: 20px;
+  width: 50px;
+  height: 100px;
   border: 1px solid black;
   /*align-items: center;*/
   justify-content: center;
@@ -84,11 +84,18 @@ body {
 
 .img-sm {
   padding: 15px;
-  margin: 100px;
-  width: 5px;
-  height: 70px;
-  display: grid;
+  margin: 20px;
+  width: 200px;
+  height: 450px;
+  display: flex;
   justify-content: center;
+}
+
+.cardImages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2.2rem;
 }
 
 .centrado {
@@ -146,7 +153,7 @@ body {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   text-decoration: none;
   color: #ffffff;
   font-family: "Maven Pro", sans-serif;
