@@ -19,7 +19,7 @@
   /*aside queda abajo de los productos dirección horizontal*/
   #aside {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
   }
 }

@@ -57,14 +57,13 @@
     font-size: $fontMd;
 }
 
-    .cardText a{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 150px;
-        margin-left: 150px;
-    }
+.button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
 
 
 #productos .galeria{
@@ -79,9 +78,10 @@
          #productos .galeria figure img{
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
-            width: 80%;
+            width: auto;
+            height: 250px;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
         }
     
     
@@ -99,10 +99,16 @@
                 text-align: center;
             }
 
+            #productos .galeria a{
+                display: flex;
+                width: auto;
+                justify-content: center;
+                
+            }
+
 
 .products{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex(column, center, center);
     margin: auto;
+
 }
