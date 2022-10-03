@@ -30,6 +30,11 @@
 
 
 // navegador filtros
+.tittle{
+    font-size: $fontMd;
+    color: black;
+}
+
 .secondNav{
 	
 	color:black ;
@@ -44,8 +49,8 @@
 
 .elementAside{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    /*flex-direction: row;
+    justify-content: space-around;*/
     margin: 10px;
     padding: 10px;
 }

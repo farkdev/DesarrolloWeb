@@ -20,9 +20,7 @@
 	}
 
 	/* reducimos el width de las figure a 90%*/
-	#productos .galeria figure{
-		width: 90%;
-	}
+
 
 	/*aside queda abajo de los productos dirección horizontal*/
 	#aside{
@@ -30,6 +28,12 @@
 		flex-direction: column;
 		justify-content: space-around;
 	}
+		#aside .elementAside{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+
+		}
 }
 
 /* min-width: 1024px defino 3 cols con medidas 20vw 70vw 10vw*/

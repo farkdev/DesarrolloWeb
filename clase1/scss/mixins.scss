@@ -5,3 +5,7 @@
     align-items: $align;
 }
 
+.products{
+    @include flex(column, center, center);
+    /*margin: auto;*/
+}

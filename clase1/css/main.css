@@ -31,6 +31,11 @@ body {
   margin-right: 20px;
 }
 
+.tittle {
+  font-size: 2.2rem;
+  color: black;
+}
+
 .secondNav {
   color: black;
   padding: 10px 30px;
@@ -43,8 +48,8 @@ body {
 
 .elementAside {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  /*flex-direction: row;
+  justify-content: space-around;*/
   margin: 10px;
   padding: 10px;
 }
@@ -97,7 +102,7 @@ body {
 .img-sm {
   padding: 0px;
   margin: 100px;
-  width: auto;
+  width: 60%;
   height: 350px;
   display: flex;
   justify-content: center;
@@ -115,7 +120,6 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 150px;
 }
 
 #productos .galeria {
@@ -125,20 +129,20 @@ body {
 }
 
 #productos .galeria figure {
-  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #productos .galeria figure img {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  width: auto;
-  height: 250px;
+  width: 60%;
+  height: 350px;
   display: flex;
   justify-content: center;
 }
 
 #productos .galeria figure figcaption {
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   padding: 10px 0;
   background-color: white;
   text-align: center;
@@ -155,13 +159,6 @@ body {
   display: flex;
   width: auto;
   justify-content: center;
-}
-
-.products {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: auto;
 }
 
 .centrado {
@@ -230,4 +227,12 @@ body {
   height: 55px;
   margin: 10px;
   flex-direction: row;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*margin: auto;*/
 }/*# sourceMappingURL=main.css.map */
