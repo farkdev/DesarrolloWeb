@@ -4,4 +4,11 @@
   justify-content: center;
   align-items: center;
   /*margin: auto;*/
+}
+
+.legal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=mixins.css.map */

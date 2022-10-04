@@ -9,3 +9,7 @@
     @include flex(column, center, center);
     /*margin: auto;*/
 }
+
+.legal{
+    @include flex(row, center, center)
+}

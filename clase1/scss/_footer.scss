@@ -10,61 +10,34 @@
 
 }
 
-.footer{ 
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto; 
-    grid-template-areas: 
-    "contacto mapa redes"
-    "legal legal legal";
-    font-size: $fontSm;
-    font-family: 'Arvo', serif;
-    margin: 5px 15px;
-    border: solid 2px black;
-   
+.pie-rgstro{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-    .contacto{
-        display: flex;
-        grid-area: contacto;
-        grid-column: 1/2;
-        grid-row: 1/2;
-        justify-content: center;
-    }
-    .mapa{
-        display: flex;
-        grid-area: mapa;
-        font-size: 1.5rem;
-        grid-column: 2/3;
-        grid-row: 1/2;
-        justify-content: center;
-    }
-    .redes{
-        display: flex;
-        grid-area: redes;
-        grid-column: 3/4;
-        grid-row: 1/2;
-        justify-content: center;
-    }
-    .legal{
-        grid-area: legal;
-        display: flex;
-        margin: 5px;
-        grid-column: 1/4;
-        grid-row: 2/4;
-        justify-content: center;
-        flex-direction: row;
-        align-items: center;
-        font-size: $fontSm;
-		text-decoration: none;
-		color: #ffffff;
-        font-family: 'Maven Pro', sans-serif;
 
-    }
-
-    .icon{
-        width: 55px;
-        height: 55px;
-        margin: 10px;
-        flex-direction: row;
-    }
+.register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.register-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: auto;
+    
+}
+.us{
+    display: flex;
+    flex-direction: row;
+    
+}
+.icon{
+    width: 55px;
+    height: 55px;
+    margin: 10px;
+    flex-direction: row;
+}
     
