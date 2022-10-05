@@ -27,8 +27,9 @@ h2{
 /* Mobile first   */
 .contenedor{
 	display: grid;
-    grid-template-columns: auto;
-	grid-template-rows: auto auto auto auto auto;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
 	grid-template-areas: 
 	"nav" 
 	"header" 
@@ -38,28 +39,34 @@ h2{
 }
 /* areas layout*/
 #mainNav{
-	grid-area: nav; 
+	grid-area: nav;
+    grid-column: span 3;
 }
 
 #header{
 	grid-area: header;
-    display: flex;
-    justify-content: center;
+    grid-column: span 3;
+
 }
 
 #productos{
 	grid-area: productos;
+    grid-column: 2/4;
+
     
 }
 
 #aside{
     grid-area: aside;
+    grid-column: 1/2;
 	background-color: rgba(109, 126, 223, 0.7);
 	padding: 0px;
     margin: 0px;
 }
 #footer{
 	grid-area: footer;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 	
 /* --- ICONS EN COLUMNA EN MOBILE --- */
