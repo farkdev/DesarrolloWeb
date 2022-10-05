@@ -11,5 +11,8 @@
 }
 
 .legal{
-    @include flex(row, center, center)
+    @include flex(row, center, center);
+    font-size: 1.5rem;
+    text-decoration: none;
+
 }

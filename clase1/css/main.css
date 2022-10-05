@@ -189,6 +189,8 @@ body {
   justify-content: center;
   width: 400px;
   height: auto;
+  margin-top: 150px;
+  margin-bottom: 400px;
 }
 
 .us {
@@ -201,6 +203,21 @@ body {
   height: 55px;
   margin: 10px;
   flex-direction: row;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.map-responsive {
+  overflow: hidden;
+  margin-top: 40px;
+  position: relative;
+  height: 500px;
+  width: auto;
 }
 
 .products {
@@ -216,4 +233,6 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-size: 1.5rem;
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
