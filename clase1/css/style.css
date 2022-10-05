@@ -150,27 +150,9 @@ nav ul li a{
 }
 
 
-
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-
-.map-responsive iframe{
-    left:0;
-    top:0;
-    margin: 15px 10px;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
 .pie{
     display: flex;
     flex-direction: row;
-    
-
 }
 
 .list{
