@@ -26,10 +26,12 @@ h2{
 
 /* Mobile first   */
 .contenedor{
-	display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(4, auto);
+	width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, auto);
 	grid-template-areas: 
 	"nav" 
 	"header" 
@@ -40,33 +42,33 @@ h2{
 /* areas layout*/
 #mainNav{
 	grid-area: nav;
-    grid-column: span 3;
+    
 }
 
 #header{
 	grid-area: header;
-    grid-column: span 3;
+    
 
 }
 
 #productos{
 	grid-area: productos;
-    grid-column: 2/4;
+    
 
     
 }
 
 #aside{
     grid-area: aside;
-    grid-column: 1/2;
+    
 	background-color: rgba(109, 126, 223, 0.7);
 	padding: 0px;
     margin: 0px;
 }
 #footer{
 	grid-area: footer;
-    grid-column-start: 1;
-    grid-column-end: 4;
+
+
 }
 	
 /* --- ICONS EN COLUMNA EN MOBILE --- */
@@ -198,14 +200,16 @@ nav ul li a{
 
 /* ======================= media queries INDEX ======================= */
 
-/* min-width: 768px definimos 2cols (30VW - 70VW) y 5 rows auto */
+/* min-width: 768px definimos 2cols y 5 rows auto */
 @media (min-width: 768px){
 	.contenedor{
-		grid-template-columns: 30vw 70vw;
+		grid-template-columns: 15vw 65vw;
+        grid-template-rows: repeat(5, auto);
 		grid-template-areas: 
 		"nav nav"
 		"header header" 
-		"productos aside" 
+		"productos productos"
+        "aside aside"
 		"footer footer";
 	}
 
@@ -217,15 +221,10 @@ nav ul li a{
 		align-items: center;
 	}
 
-	/* reducimos el width de las figure a 90%*/
-	#productos .galeria figure{
-		width: 90%;
-	}
-
 	/*aside queda abajo de los productos dirección horizontal*/
 	#aside{
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: space-around;
 	}
 }
@@ -235,7 +234,7 @@ nav ul li a{
 	
 	.contenedor{
 		display: grid;
-		grid-template-columns: 20vw 70vw 10vw;
+		grid-template-columns: 10vw 70vw 20vw;
         grid-template-rows: auto;
 		grid-template-areas: 
 		"nav nav nav" 

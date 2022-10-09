@@ -1,10 +1,11 @@
 @charset "UTF-8";
 /* ======================= media queries INDEX ======================= */
-/* min-width: 768px definimos 2cols (30VW - 70VW) y 5 rows auto */
+/* min-width: 768px 2cols (15VW - 85VW) y 5 rows auto */
 @media (min-width: 768px) {
   .contenedor {
-    grid-template-columns: 30vw 70vw;
-    grid-template-areas: "nav nav" "header header" "productos aside" "footer footer";
+    grid-template-columns: 15vw 85vw;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "nav nav" "header header" "productos productos" "aside aside" "footer footer";
   }
   /* los productos van apilados */
   #productos .galeria {
@@ -12,7 +13,9 @@
     flex-direction: column;
     align-items: center;
   }
-  /* reducimos el width de las figure a 90%*/
+  #productos .galeria img {
+    width: 55%;
+  }
   /*aside queda abajo de los productos dirección horizontal*/
   #aside {
     display: flex;
@@ -25,12 +28,14 @@
     justify-content: space-around;
   }
 }
-/* min-width: 1024px defino 3 cols con medidas 20vw 70vw 10vw*/
+/* min-width: 1024px 3 cols con medidas 20vw 70vw 10vw*/
 @media (min-width: 1024px) {
   .contenedor {
+    width: 100vw;
+    height: 100vh;
     display: grid;
     grid-template-columns: 20vw 70vw 10vw;
-    grid-template-rows: auto;
+    grid-template-rows: repeat(4, auto);
     grid-template-areas: "nav nav nav" "header header header" "aside productos productos" "footer footer footer";
   }
   .logo ul {
@@ -44,18 +49,18 @@
     align-content: flex-start;
     justify-content: flex-start;
   }
+  #productos .galeria {
+    flex-direction: row;
+    justify-content: space-around;
+  }
   /* llevo al 80% el width de los productos*/
-  #productos .galeria figure {
-    width: 80%;
+  #productos .galeria img {
+    width: 55%;
   }
   /* cambio la dirección de la botonera a row*/
   .navBar {
     flex-direction: row;
     justify-content: space-between;
-  }
-  /*sacamos el margin bottom 0 al logo*/
-  .botonera img {
-    margin-bottom: 0;
   }
 }
 /* min-width: 1200px cambio la dirección de la gale de productos a row*/
@@ -65,7 +70,7 @@
     justify-content: space-around;
   }
   /*achico el width de los productos al 30%*/
-  #productos .galeria figure {
-    width: 30%;
+  #productos .galeria img {
+    width: 50%;
   }
 }/*# sourceMappingURL=breakpoints.css.map */

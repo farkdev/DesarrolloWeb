@@ -14,80 +14,76 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/mixins.css">
+    <link rel="stylesheet" href="css/breakpoints.css">
     <title>Supermercado 24HS</title>
   </head>
   <body>
     <div class="contenedor">
       <!-- INICIA NAV-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-fl" id="mainNav">
-      <div class="container-fluid">
-        <a class="navbar-brand navBar" href="index.html">
-          <img src="img/newlogo.svg" alt="Logo-de-empresa" class="">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="productos.html">Productos</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Categorías
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Alimentos</a></li>
-                <li><a class="dropdown-item" href="#">Electrodomésticos</a></li>
-                <li><a class="dropdown-item" href="#">Congelados</a></li>
-                <li><a class="dropdown-item" href="#">Limpieza</a></li>
-                <li><a class="dropdown-item" href="#">Jardín y Hogar</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ofertas.html">Ofertas</a>
-            </li>
+      <nav class="navbar navbar-expand-lg navbar-light bg-fl" id="mainNav">
+        <div class="container-fluid">
+          <a class="navbar-brand navBar" href="index.html">
+            <img src="img/newlogo.svg" alt="Logo-de-empresa" class="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categorías </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Alimentos</a></li>
+                  <li><a class="dropdown-item" href="#">Electrodomésticos</a></li>
+                  <li><a class="dropdown-item" href="#">Congelados</a></li>
+                  <li><a class="dropdown-item" href="#">Limpieza</a></li>
+                  <li><a class="dropdown-item" href="#">Jardín y Hogar</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ofertas.html">Ofertas</a>
+              </li>
             
-            <li class="nav-item">
-              <a class="nav-link" href="registro.html">Registro</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">Nosotros</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
+              <li class="nav-item">
+                <a class="nav-link" href="registro.html">Registro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- TERMINA NAV -->
+      <!--INICIA CAROUSEL-->
+      <div id="header">
+        <div id="carouselExampleSlidesOnly " class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" id="">
+            <div class="carousel-item active" id="">
+              <img src="img/verduleria.jpeg" class="d-block img-center" alt="imagen-de-verduleria-supermercado">
+            </div>
+            <div class="carousel-item" id="">
+              <img src="img/delivery.webp" class="d-block img-center" alt="delivery-entregando-pedido">
+            </div>
+            <div class="carousel-item" id="">
+              <img src="img/electrodomesticos.webp" class="d-block img-center" alt="stand-de-electrodomesticos-hogar">
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-    <!-- TERMINA NAV -->
-    <!--INICIA CAROUSEL-->
-    <div id="header">
-      <div id="carouselExampleSlidesOnly " class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner" id="">
-          <div class="carousel-item active" id="">
-            <img src="img/verduleria.jpeg" class="d-block img-center" alt="imagen-de-verduleria-supermercado">
-          </div>
-          <div class="carousel-item" id="">
-            <img src="img/delivery.webp" class="d-block img-center" alt="delivery-entregando-pedido">
-          </div>
-          <div class="carousel-item" id="">
-            <img src="img/electrodomesticos.webp" class="d-block img-center" alt="stand-de-electrodomesticos-hogar">
-          </div>
-        </div>
-
-
-
-    </div>
+      <!-- FIN CAROUSEL-->   
+      <!--LISTA PRODUCTOS-->
+      <main class="py-3" id="productos" >
+        <h1 class="textCenter animate__animated animate__shakeX">El primer supermercado online abierto las 24 HS, todos los días del año</h1>
     
-    </div>
-    <!-- FIN CAROUSEL-->   
-    <!--LISTA PRODUCTOS-->
-    <main class="py-3" id="productos" >
-      <h1 class="textCenter animate__animated animate__shakeX">El primer supermercado online abierto las 24 HS, todos los días del año</h1>
-      
         <div class="galeria">
           
           <div class="products">
@@ -120,7 +116,6 @@
         </div>  
 
         <div class="galeria">
-          
         
           <div class="products" >
             <img src="img/fideos-matarazzo-mostacholwebp.webp" class="img-sm" alt="Fideos Matarazzo Mostachol">
@@ -150,7 +145,8 @@
           </div>
 
         </div> 
-          
+        <!-- FIN PRODUCTOS-->
+        <!--PAGINADOR-->
         <nav aria-label="..." class="center">
           <ul class="pagination">
             <li class="page-item disabled">
@@ -166,18 +162,14 @@
             </li>
           </ul>
         </nav>
+        
         <!--FIN PAGINADOR-->
       
-    </main>
-    
-    <!-- FIN PRODUCTOS-->
-
+      </main>
     
     
   
-      
-  
-    <!--ASIDE O FILTRO-->
+      <!--ASIDE O FILTRO-->
       <div class=" secondNav bg-fl" id="aside">
         <select class="form-select" aria-label="Default select example">
           <option selected >Productos</option>
@@ -188,51 +180,45 @@
           <option value="3">Limpieza</option>
         </select>
       </div>
-      
-        
-    <!--FIN ASIDE O FILTRO-->
-
-
-    <!--PAGINADOR-->
     
+      <!--FIN ASIDE O FILTRO-->
 
-
-    <!--FOOTER-->
-    <div id="footer">
-      <div class="mb-3" >
-        <p class="centrado">Déjanos un mensaje</p>
-        <label for="exampleFormControlInput1" class="form-label fontS">Ingresa tu email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@gmail.com">
-      </div>
-      <div class="mb-3" id="">
-        <label for="exampleFormControlTextarea1" class="form-label fontS">Acá deja tu mensaje!</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        <input type="reset" value="Cancelar">
-        <input type="submit" value="Enviar">
-      </div>
-      <p class="centrado" id="">Nuestras redes!</p>
-      <div class="legal">
-        
-        <a href="https://www.facebook.com/" target="_blank" >
-        <img src="img/facebook.png" alt=""class="icon">
-        </a> 
-        <a href="https://twitter.com/?lang=es" target="_blank" >
-        <img src="img/twitter.png" alt="" class="icon">
-        </a>
-        <a href="https://mail.google.com/" target="_blank" >
-        <img src="img/gmail2.png" alt=""class="icon">
-        </a>
-      </div> 
-      <div>
-        <ul class="legal">
-            <li class="list-inline-item"><a href="nosotros.html">Acerca de nosotros</a></li>
-            <li class="list-inline-item"><a href="nosotros.html">Contacto</a></li>
-            <li class="list-inline-item"><a href="#!">Defensa al consumidor</a></li>
-            <li class="list-inline-item"><a href="#!">Términos y condiciones</a></li>
-            <li class="list-inline-item"><a href="#!">Ayuda</a></li>
-            <li class="list-inline-item"><a href="#!">Boton arrepentimiento</a></li>
-        </ul>
-    </div>  
+      <!--FOOTER-->
+      <div id="footer">
+        <div class="mb-3" >
+          <p class="centrado">Déjanos un mensaje</p>
+          <label for="exampleFormControlInput1" class="form-label fontS">Ingresa tu email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@gmail.com">
+        </div>
+        <div class="mb-3" id="">
+          <label for="exampleFormControlTextarea1" class="form-label fontS">Acá deja tu mensaje!</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <input type="reset" value="Cancelar">
+          <input type="submit" value="Enviar">
+        </div>
+        <p class="centrado" id="">Nuestras redes!</p>
+        <div class="legal">
+          
+          <a href="https://www.facebook.com/" target="_blank" >
+          <img src="img/facebook.png" alt=""class="icon">
+          </a> 
+          <a href="https://twitter.com/?lang=es" target="_blank" >
+          <img src="img/twitter.png" alt="" class="icon">
+          </a>
+          <a href="https://mail.google.com/" target="_blank" >
+          <img src="img/gmail2.png" alt=""class="icon">
+          </a>
+        </div> 
+        <div>
+          <ul class="legal">
+              <li class="list-inline-item"><a href="nosotros.html">Acerca de nosotros</a></li>
+              <li class="list-inline-item"><a href="nosotros.html">Contacto</a></li>
+              <li class="list-inline-item"><a href="#!">Defensa al consumidor</a></li>
+              <li class="list-inline-item"><a href="#!">Términos y condiciones</a></li>
+              <li class="list-inline-item"><a href="#!">Ayuda</a></li>
+              <li class="list-inline-item"><a href="#!">Boton arrepentimiento</a></li>
+          </ul>
+      </div>  
 
     </div>
     
