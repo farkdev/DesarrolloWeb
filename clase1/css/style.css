@@ -26,8 +26,6 @@ h2{
 
 /* Mobile first   */
 .contenedor{
-	width: 100vw;
-    height: 100vh;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr;
@@ -71,7 +69,25 @@ h2{
 
 }
 	
-/* --- ICONS EN COLUMNA EN MOBILE --- */
+/* --- ICONOS EN COLUMNA EN MOBILE --- */
+#productos .galeria{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+    #productos .galeria img{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     }
+         #productos .galeria figure img{
+            width: 55%;
+            display: flex;
+            justify-content: center;
+        }
+    
+
 
 
 /*termina mobile first*/
@@ -181,107 +197,4 @@ nav ul li a{
     font-size: 1.5rem;
     font-family: 'Maven Pro', sans-serif;
     color: black ;
-}
-#aside{
-    display: flex;
-	background-color: rgba(109, 126, 223, 0.7);
-	padding: 0px;
-    margin: 0px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(109, 126, 223, 0.7);
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 3rem;
-    text-align: center;
-    line-height: 2.2rem;
-    font-weight: 200;
-    border: solid 2px black;
-    justify-content: center;
-}
-
-/* ======================= media queries INDEX ======================= */
-
-/* min-width: 768px definimos 2cols y 5 rows auto */
-@media (min-width: 768px){
-	.contenedor{
-		grid-template-columns: 15vw 65vw;
-        grid-template-rows: repeat(5, auto);
-		grid-template-areas: 
-		"nav nav"
-		"header header" 
-		"productos productos"
-        "aside aside"
-		"footer footer";
-	}
-
- 	
- /* los productos van apilados */
-	#productos .galeria{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	/*aside queda abajo de los productos dirección horizontal*/
-	#aside{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-	}
-}
-
-/* min-width: 1024px defino 3 cols con medidas 20vw 70vw 10vw*/
-@media (min-width: 1024px){
-	
-	.contenedor{
-		display: grid;
-		grid-template-columns: 10vw 70vw 20vw;
-        grid-template-rows: auto;
-		grid-template-areas: 
-		"nav nav nav" 
-		"header header header" 
-		"aside productos productos" 
-		"footer footer footer";
-	}
-    .logo ul{
-        display: flex; 
-        flex-direction: row;
-    }
-	/* cambio la dirección del aside a columna ahora flota a la derecha*/
-	#aside{
-        display: flex;
-		flex-direction: column;
-		align-content: flex-start;
-        justify-content: flex-start;
-	}
-
-	/* llevo al 80% el width de los productos*/
-	#productos .galeria figure{
-		width: 80%;
-	}
-
-	/* cambio la dirección de la botonera a row*/
-	.navBar{
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	/*sacamos el margin bottom 0 al logo*/
-		.botonera img{
-			margin-bottom: 0;
-		}
-}
-
-/* min-width: 1200px cambio la dirección de la gale de productos a row*/
-@media (min-width: 1200px){
-	
-	#productos .galeria{
-		flex-direction: row;
-		justify-content: space-around;
-	}
-
-	/*achico el width de los productos al 30%*/
-		#productos .galeria figure{
-			width: 30%;
-		}
-
 }

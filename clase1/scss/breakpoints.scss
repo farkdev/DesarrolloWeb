@@ -39,14 +39,13 @@
 		}
 }
 
-/* min-width: 1024px 3 cols con medidas 20vw 70vw 10vw*/
+/* min-width: 1024px 2 cols con medidas 15vw y 85 vw*/
 @media (min-width: 1024px){
 	
 	.contenedor{
-		width: 100vw;
-		height: 100vh;
+		
 		display: grid;
-		grid-template-columns: 20vw 70vw 10vw;
+		grid-template-columns: 15vw 85vw;
         grid-template-rows: repeat(4, auto);
 		grid-template-areas: 
 		"nav nav nav" 
@@ -54,16 +53,13 @@
 		"aside productos productos" 
 		"footer footer footer";
 	}
-    .logo ul{
-        display: flex; 
-        flex-direction: row;
-    }
+    
 	/* cambio la dirección del aside a columna ahora flota a la derecha*/
 	#aside{
         display: flex;
 		flex-direction: column;
-		align-content: flex-start;
-        justify-content: flex-start;
+		align-content: center;
+        justify-content: center;
 	}
 	#productos .galeria{
 		flex-direction: row;
