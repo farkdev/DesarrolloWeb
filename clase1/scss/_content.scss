@@ -88,8 +88,11 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-}
-    .txt-error h2,h4{
+    h2{font-size: $fontMd;
+        line-height: 2em;
+    }
+    h4{
         font-size: $fontMd;
         line-height: 2em;
     }
+}
