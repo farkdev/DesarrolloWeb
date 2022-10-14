@@ -7,8 +7,6 @@
 
 .products{
     @include flex(column, center, center);
-    margin-bottom: 150px;
-    
 }
 
 .legal{

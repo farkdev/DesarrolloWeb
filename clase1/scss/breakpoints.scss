@@ -1,4 +1,3 @@
-/* ======================= media queries INDEX ======================= */
 
 /* min-width: 768px 2cols (15VW - 85VW) y 5 rows auto */
 @media (min-width: 768px){
@@ -21,7 +20,7 @@
 	}
 
 	#productos .galeria img{
-		width: 55%;
+		width: 80%;
 	}
 
 
@@ -37,6 +36,11 @@
 			justify-content: space-around;
 
 		}
+
+	#footer ul{
+		display: flex;
+		flex-direction: row;
+	}
 }
 
 /* min-width: 1024px 2 cols con medidas 15vw y 85 vw*/
@@ -68,7 +72,7 @@
 
 	/* llevo al 80% el width de los productos*/
 	#productos .galeria img{
-		width: 55%;
+		width: 70%;
 	}
 
 	/* cambio la dirección de la botonera a row*/
@@ -76,7 +80,10 @@
 		flex-direction: row;
 		justify-content: space-between;
 	}
-
+	#footer ul{
+		display: flex;
+		flex-direction: row;
+	}
 }
 
 /* min-width: 1200px cambio la dirección de la gale de productos a row*/
@@ -90,7 +97,7 @@
 
 	/*achico el width de los productos al 30%*/
 		#productos .galeria img{
-			width: 50%;
+			width: 65%;
 		}
 
 }

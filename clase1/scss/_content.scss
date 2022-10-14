@@ -10,7 +10,7 @@
     color: black;
     /*background-color: rgba(109, 126, 223, 0.7);*/
     font-family: 'Maven Pro', sans-serif;
-    font-size: $fontLg;
+    font-size: $fontMd;
     line-height: 3.2rem;
     font-weight: 400;
     padding: 10px;
@@ -63,4 +63,9 @@
     align-items: center;
     justify-content: center;
     
+}
+
+.ofertas-img{
+    width: 70%;
+    height: 300px;
 }

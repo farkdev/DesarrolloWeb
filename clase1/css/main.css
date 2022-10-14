@@ -71,7 +71,7 @@ body {
   color: black;
   /*background-color: rgba(109, 126, 223, 0.7);*/
   font-family: "Maven Pro", sans-serif;
-  font-size: 3.5rem;
+  font-size: 2.2rem;
   line-height: 3.2rem;
   font-weight: 400;
   padding: 10px;
@@ -120,6 +120,11 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.ofertas-img {
+  width: 70%;
+  height: 300px;
 }
 
 .centrado {
@@ -175,7 +180,7 @@ body {
 
 .map-responsive {
   overflow: hidden;
-  margin-top: 40px;
+  margin-top: 20px;
   position: relative;
   height: 500px;
   width: auto;
@@ -186,7 +191,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*margin: auto;*/
 }
 
 .legal {

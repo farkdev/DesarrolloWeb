@@ -14,154 +14,209 @@
     <link rel="stylesheet" href="css/breakpoints.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-fl">
-        <div class="container-fluid">
+    <div class="contenedor">
+        <nav class="navbar navbar-expand-lg navbar-light bg-fl" id="mainNav">
+          <div class="container-fluid">
             <a class="navbar-brand navBar" href="index.html">
-                <img src="img/newlogo.svg" alt="Logo-de-empresa" class="">
+              <img src="img/newlogo.svg" alt="LOGO" class="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
             </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Categorías
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Alimentos</a></li>
-                            <li><a class="dropdown-item" href="#">Electrodomésticos</a></li>
-                            <li><a class="dropdown-item" href="#">Congelados</a></li>
-                            <li><a class="dropdown-item" href="#">Limpieza</a></li>
-                            <li><a class="dropdown-item" href="#">Jardín y Hogar</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ofertas.html">Ofertas</a>
-                    </li>
-              
-                    <li class="nav-item">
-                        <a class="nav-link" href="registro.html">Registro</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorías
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Alimentos</a></li>
+                    <li><a class="dropdown-item" href="#">Electrodomésticos</a></li>
+                    <li><a class="dropdown-item" href="#">Congelados</a></li>
+                    <li><a class="dropdown-item" href="#">Limpieza</a></li>
+                    <li><a class="dropdown-item" href="#">Jardín y Hogar</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ofertas.html">Ofertas</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="registro.html">Registro</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
           </div>
-        </div>
-    </nav>
-    <main id="productos">
-        <h2 class="textCenter">Productos</h2>
-            
-        <div class="galeria"> 
-               
-            <div class="products">
-                <img src="img/Yogur-Entero-La-Serenisima-Frutilla.webp" class="img-sm" alt="Yogur-Entero-La-Serenisima-Frutilla">
-                <div class="cardText">
-                  <h2 class="textCenter">Yogurt frutilla Serenisima</h2>
-                  <p class="price">$264,99</p>
-                </div>
-                <a href="#" class="btn btn-primary button">Agregar</a>
-            </div>
-
-
-            <div class="products">
-                <img src="img/helado.cookies.png" alt="helado-cookies-pote-freddo" class="img-sm">
-                <div class="cardText">
-                  <h2 class="textCenter">Helado Freddo Cookies&Cream</h2>
-                  <p class="price">$500</p>
-                </div>
-                <a href="#" class="btn btn-primary button">Agregar</a>
-            </div>
-            
-    
-            <div class="products">
-                <img src="img/arroz-dos-hermanos.webp" alt="arroz-dos-hermanos" class="img-sm">
-                <div class="cardText">
-                    <h2 class="textCenter">Helado Freddo Cookies&Cream</h2>
-                    <p class="price">$500</p>
-                </div>
-                <a href="#" class="btn btn-primary button">Agregar</a>
-            </div>
-
-        </div>
-        
-        <div class="galeria">
-
-
-            <div class="products">
-                <img src="img/cafe-nescafe-170gr.jpg" alt="cafe-nescafe-170gr" class="img-sm">
-                <div class="cardText">
-                    <h2 class="textCenter">Cafe Clásico Nescafe Dolca</h2>
-                    <p class="price">$267,89</p>
-                </div>
-                <a href="#" class="btn btn-primary button">Agregar</a>
-            </div>
-
-
-            <div class="products">
-                <img src="img/jabon-liquido-Ariel.webp" alt="jabon-liquido-Ariel" class="img-sm">
-                <div class="cardText">
-                    <h2 class="textCenter">Jabón Líquido Ariel Expert+ Pouch 3 Lts.</h2>
-                    <p class="price">$ 1066,20</p>
-                </div>
-                <a href="#" class="btn btn-primary button">Agregar</a>
-            </div>
-
-
-            <div class="products">
-                <img src="img/cerveza-corona-710ml-x6.webp" alt="cerveza-corona-710ml-x6" class="img-sm">
-                <div class="cardText">
-                    <h2 class="textCenter">Cerveza Corona 710 ml X6</h2>
-                    <p class="price">$ 2200</p>
-                </div>
-                <a href="#" class="btn btn-primary button">Agregar</a>
-            </div>
-    
-        </div>
-
-    </main>
- <!--PAGINADOR-->
- <nav aria-label="..." class="center">
-    <ul class="pagination">
-      <li class="page-item disabled">
-        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
-      </li>
-      <li class="page-item"><a class="page-link" href="#">1</a></li>
-      <li class="page-item active" aria-current="page">
-        <a class="page-link" href="#">2</a>
-      </li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item">
-        <a class="page-link" href="#">Siguiente</a>
-      </li>
-    </ul>
-  </nav>
-  <!--FIN PAGINADOR-->
-
-  <!--ASIDE-->
-
-    <aside id="">
-        <nav id="aside" class="secondNav bg-fl">
-            <h3 class="tittle">Categorías</h3>
-            <b class=""></b>
-                <ul class="elementAside">
-                    <li class="separador"><a href="" class="">Alimentos</a></li>
-                    <li class="separador"><a href="" class="">Electrodomésticos</a></li>
-                    <li class="separador"><a href="" class="">Limpieza</a></li>
-                    <li class="separador"><a href="" class="">Tecnología</a></li>
-                    <li class="separador"><a href="" class="">Jardín y Hogar</a></li>
-                </ul>
         </nav>
-
-    </aside>
+        <main class="py-3" id="productos" >
+          <h1 class="textCenter">Acá podés ver todos nuestros productos disponibles.</h1>
+          <div class="container-fluid">
+            <div class="row">
+              <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                <div class="products card">
+                  <img src="img/arroz-maximo.webp" class="img-sm" alt="Arroz Maximo Largo Fino 500Gr">
+                  <div class="cardText">
+                    <h2 class="textCenter">Arroz Maximo Largo Fino 500Gr</h2>
+                    <p class="price">$ 85</p>
+                  </div>
+                  <a href="#" class="btn btn-primary button">Agregar al carrito</a>
+                </div>
+              </article>
+              
+              <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                <div class="products card" >
+                  <img src="img/harina-favorita.webp" class="img-sm" alt="harina favorita 1kg">
+                  <div class="cardText">
+                    <h2 class="textCenter">Harina Favorita 000 1kg</h2>
+                    <p class="price">$ 76</p>
+                  </div>
+                  <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                </div>
+              </article>
+              
+              <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                <div class="products card" >
+                  <img src="img/pan-lactal.webp" class="img-sm" alt="Pan Lactal 500Gr">
+                  <div class="cardText">
+                    <h2 class="textCenter">Pan Lactal 500Gr</h2>
+                    <p class="price">$ 280</p>
+                  </div>
+                  <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                </div>
+              </article>
+              
+              <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                <div class="products card" >
+                  <img src="img/aceite-oliva.webp" class="img-sm" alt="aceite-oliva">
+                  <div class="cardText">
+                    <h2 class="textCenter"> Aceite Oliva Extra Virgen 500Ml</h2>
+                    <p class="price">$ 921</p>
+                  </div>
+                  <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                </div>
+              </article>
+            </div>  
+    
+            <div class="row">
+              <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                <div class="products card" >
+                  <img src="img/alfajor-milka-oreo.webp" class="img-sm" alt="alfajor-milka-oreo">
+                  <div class="cardText">
+                    <h2 class="textCenter">Alfajor Milka Oreo 61Gr.</h2>
+                    <p class="price">$ 220</p>
+                  </div>
+                  <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                </div>
+              </article>
+              
+              <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                <div class="products card" >
+                  <img src="img/flan-vainilla.webp" class="img-sm" alt="flan-vainilla-40gr">
+                  <div class="cardText">
+                    <h2 class="textCenter">Flan Vainilla 40Gr</h2>
+                    <p class="price">$ 80</p>
+                  </div>
+                  <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                </div>
+    
+              </article>
+            
+              <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                <div class="products card" >
+                  <img src="img/rapiditas-bimbo.webp" class="img-sm" alt="rapiditas-bimbo">
+                  <div class="cardText">
+                    <h2 class="textCenter">Rapiditas Bimbo Integrales 10U.</h2>
+                    <p class="price">$ 330</p>
+                  </div>
+                  <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                </div>
+    
+              </article>
+    
+              <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                <div class="products card">
+                  <img src="img/savora-500gr.webp" class="img-sm" alt="savora-500gr">
+                  <div class="cardText">
+                    <h2 class="textCenter">Mostaza Savora 500Gr </h2>
+                    <p class="price">$ 361</p>
+                  </div>
+                  <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                </div>
+              </article>
+    
+            </div> 
+          </div>
+          
+          <!-- FIN PRODUCTOS-->
+          <!--PAGINADOR-->
+          <nav aria-label="..." class="center">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Siguiente</a>
+              </li>
+            </ul>
+          </nav>
+          
+          <!--FIN PAGINADOR-->
+        
+        </main>
+      
+      
+    
+        <!--ASIDE O FILTRO-->
+        <div class=" secondNav bg-fl" id="aside">
+          <select class="form-select" aria-label="Default select example">
+            <option selected >Productos</option>
+            <option value="1">En promoción</option>
+            <option value="2">De almacen</option>
+            <option value="3">Frescos</option>
+            <option value="4">Frutas y Verduras</option>
+            <option value="5">Bebidas</option>
+            <option value="6">Limpieza</option>
+          </select>
+          <br>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Marca</option>
+            <option value="1">Arcor</option>
+            <option value="2">Bimbo</option>
+            <option value="3">Granja del Sol</option>
+            <option value="4">La Serenisima</option>
+            <option value="5">Lario</option>
+            <option value="6">Sancor</option>
+            <option value="7">Swift</option>
+            <option value="8">Yogurisimo</option>
+          </select>
+          <br>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Tipo</option>
+            <option value="1">Aceites y aderezos</option>
+            <option value="2">Arroz y legumbres</option>
+            <option value="3">Comidas listas></option>
+            <option value="4">Conservas</option>
+            <option value="5">Golosinas y chocolates</option>
+            <option value="6">Harinas</option>
+            <option value="7">Pastas secas</option>
+            <option value="8">Panadería</option>
+          </select>
+        </div>
     
     <!--FIN ASIDE-->
     
