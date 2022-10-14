@@ -43,7 +43,7 @@ body {
   line-height: 1.6em;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: space-around;
 }
 
 .elementAside {
@@ -125,6 +125,30 @@ body {
 .ofertas-img {
   width: 70%;
   height: 300px;
+}
+
+.error {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.img-error {
+  width: 700px;
+  height: 600px;
+}
+
+.txt-error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.txt-error h2, h4 {
+  font-size: 2.2rem;
+  line-height: 2em;
 }
 
 .centrado {
