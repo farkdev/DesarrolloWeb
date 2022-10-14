@@ -1,12 +1,9 @@
-@charset "UTF-8";
-/* min-width: 768px 2cols (15VW - 85VW) y 5 rows auto */
 @media (min-width: 768px) {
   .contenedor {
     grid-template-columns: 15vw 85vw;
     grid-template-rows: repeat(5, auto);
     grid-template-areas: "nav nav" "header header" "productos productos" "aside aside" "footer footer";
   }
-  /* los productos van apilados */
   #productos .galeria {
     display: flex;
     flex-direction: column;
@@ -15,7 +12,6 @@
   #productos .galeria img {
     width: 80%;
   }
-  /*aside queda abajo de los productos dirección horizontal*/
   #aside {
     display: flex;
     flex-direction: column;
@@ -31,7 +27,6 @@
     flex-direction: row;
   }
 }
-/* min-width: 1024px 2 cols con medidas 15vw y 85 vw*/
 @media (min-width: 1024px) {
   .contenedor {
     display: grid;
@@ -39,7 +34,6 @@
     grid-template-rows: repeat(4, auto);
     grid-template-areas: "nav nav nav" "header header header" "aside productos productos" "footer footer footer";
   }
-  /* cambio la dirección del aside a columna ahora flota a la derecha*/
   #aside {
     display: flex;
     flex-direction: column;
@@ -50,11 +44,9 @@
     flex-direction: row;
     justify-content: space-around;
   }
-  /* llevo al 80% el width de los productos*/
   #productos .galeria img {
     width: 70%;
   }
-  /* cambio la dirección de la botonera a row*/
   .navBar {
     flex-direction: row;
     justify-content: space-between;
@@ -64,13 +56,11 @@
     flex-direction: row;
   }
 }
-/* min-width: 1200px cambio la dirección de la gale de productos a row*/
 @media (min-width: 1200px) {
   #productos .galeria {
     flex-direction: row;
     justify-content: space-around;
   }
-  /*achico el width de los productos al 30%*/
   #productos .galeria img {
     width: 65%;
   }

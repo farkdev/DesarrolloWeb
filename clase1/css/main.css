@@ -69,7 +69,6 @@ body {
 .textCenter {
   text-align: center;
   color: black;
-  /*background-color: rgba(109, 126, 223, 0.7);*/
   font-family: "Maven Pro", sans-serif;
   font-size: 2.2rem;
   line-height: 3.2rem;
@@ -95,7 +94,6 @@ body {
   width: 50px;
   height: 100px;
   border: 1px solid black;
-  /*align-items: center;*/
   justify-content: center;
 }
 
